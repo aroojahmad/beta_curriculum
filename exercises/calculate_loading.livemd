@@ -24,13 +24,13 @@ Given a user has completed task B and C, how many points do the have? Enter your
 answer in the Elixir cell below.
 
 ```elixir
-
+48
 ```
 
 Given a user has completed task C and D, how many points do they have?
 
 ```elixir
-
+68
 ```
 
 Given a user has completed task B, what percentage of completed tasks are they currently at?
