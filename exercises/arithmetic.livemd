@@ -27,7 +27,8 @@ end
 ```
 
 ```elixir
-Kino.Input.number("add ___ to the left")
+number = 90
+Kino.Input.number("add #{number} to the left")
 ```
 
 ```mermaid
@@ -47,6 +48,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ to the left")
+2
 ```
 
 ```mermaid
@@ -66,6 +68,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ from the right")
+5
 ```
 
 ```mermaid
@@ -85,6 +88,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ to the right")
+2
 ```
 
 ```mermaid
@@ -103,6 +107,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ to the right")
+10
 ```
 
 ```mermaid
@@ -121,6 +126,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ to the right")
+-5
 ```
 
 ```mermaid
@@ -138,6 +144,7 @@ end
 
 ```elixir
 Kino.Input.number("add ___ to the left")
+-5
 ```
 
 ## Solve for X
@@ -150,101 +157,101 @@ In the Elixir cells below, enter the result of the equation. You should use
 Four plus 3 times 10.
 
 ```elixir
-
+(4 + 3) * 10
 ```
 
 Ten times ten times ten.
 
 ```elixir
-
+10 * 10 * 10
 ```
 
 Ten to the power of two hundred and one.
 
 ```elixir
-
+10.0e201
 ```
 
 Ten minus fourteen plus twelve.
 
 ```elixir
-
+10 - 14 + 12
 ```
 
 The remainder of 10 / 3.
 
 ```elixir
-
+10 / 3
 ```
 
 200 divided by 3.
 
 ```elixir
-
+200 / 3
 ```
 
 Half of 214.
 
 ```elixir
-
+214 / 2
 ```
 
 75% of 456.
 
 ```elixir
-
+.75 * 456
 ```
 
 Ten minus two times 5.
 
 ```elixir
-
+10 - 2 * 5
 ```
 
 (Ten minus two) times 5.
 
 ```elixir
-
+(10 - 2) * 5
 ```
 
 Divide 10 by 3.
 
 ```elixir
-
+10 / 3
 ```
 
 Use integer division to divide 10 by 3.
 
 ```elixir
-
+10.0 / 3.0
 ```
 
 Ten minus two times 10 to the power of 2.
 
 ```elixir
-
+10 - 2 * 10.0e2
 ```
 
 Negative ten plus four.
 
 ```elixir
-
+-10 + 4
 ```
 
 Five plus negative six minus negative two.
 
 ```elixir
-
+5 + -6 - -2
 ```
 
 60 percent of 5 plus four.
 
 ```elixir
-
+.60(5+4)
 ```
 
 Seventy divided by (ten plus two).
 
 ```elixir
-
+70 / (10 + 2)
 ```

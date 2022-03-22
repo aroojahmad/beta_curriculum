@@ -36,7 +36,7 @@ Given a user has completed task C and D, how many points do they have?
 Given a user has completed task B, what percentage of completed tasks are they currently at?
 
 ```elixir
-
+(12 / (8+12+36+32)) * .1
 ```
 
 Given a user has completed task B and A, what is their percentage of possible points earned?
