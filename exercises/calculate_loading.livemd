@@ -36,13 +36,13 @@ Given a user has completed task C and D, how many points do they have?
 Given a user has completed task B, what percentage of completed tasks are they currently at?
 
 ```elixir
-(12 / (8+12+36+32)) * .1
+12 / (8 + 12 + 36 + 32) * 100
 ```
 
 Given a user has completed task B and A, what is their percentage of possible points earned?
 
 ```elixir
-
+(8 + 12) / (8 + 12 + 36 + 32) * 100
 ```
 
 ### New Feature Added - Penalties
@@ -53,20 +53,20 @@ value is subtracted from your score.
 Given a user has completed task A, B, and C but not D, what is their score?
 
 ```elixir
-
+56 - 32 / 2
 ```
 
 Given a user has completed task B and C, but not A and D, what is their score?
 
 ```elixir
-
+48 - (4 + 32 / 2)
 ```
 
 Given a user has completed task A and B, but not C and D, what is their total percentage of possible
 points earned?
 
 ```elixir
-
+(20 - 36 / 2 - 32 / 2) / 88 * 100
 ```
 
 ### New Feature Added - Rewards

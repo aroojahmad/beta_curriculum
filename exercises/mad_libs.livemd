@@ -11,7 +11,20 @@ Then use those variables with string concatination `<>` to create the madlib.
 ![](images/madlib.jpg)
 
 ```elixir
+name_of_company = "The Founder Institute"
+a_defined_offering = "training and mentoring program"
+defined_audience = "entrepreneurs"
+problem = "launch a company"
+sauce = "unique selling propositions"
 
+paragraph =
+  "My company," <>
+    name_of_company <>
+    ", is developing a " <>
+    a_defined_offering <>
+    " to help " <> defined_audience <> " " <> problem <> " with" <> " " <> sauce <> "."
+
+paragraph
 ```
 
 ## Nature Show Madlib
@@ -22,5 +35,7 @@ Then use those variables to create a mad lib, but this time use string interpola
 ![](images/nature_show_madlib.png)
 
 ```elixir
-
+animal = "tiger"
+country = "usa"
+noun = 
 ```
