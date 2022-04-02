@@ -17,7 +17,7 @@ and --> false
 ```
 
 ```elixir
-
+false
 ```
 
 ```mermaid
@@ -28,7 +28,7 @@ or --> true
 ```
 
 ```elixir
-
+true
 ```
 
 ```mermaid
@@ -43,7 +43,7 @@ f --> true
 ```
 
 ```elixir
-
+true, false
 ```
 
 ```mermaid
@@ -55,7 +55,7 @@ flowchart LR
 ```
 
 ```elixir
-
+false
 ```
 
 ```mermaid
@@ -70,7 +70,7 @@ flowchart LR
 ```
 
 ```elixir
-
+true
 ```
 
 ```mermaid
@@ -86,7 +86,7 @@ flowchart LR
 ```
 
 ```elixir
-
+true
 ```
 
 ```mermaid
@@ -102,7 +102,7 @@ not --> b
 ```
 
 ```elixir
-Kino.Input.text("operator")
+Kino.Input.text("or")
 ```
 
 ```mermaid
@@ -118,7 +118,7 @@ not --> b
 ```
 
 ```elixir
-Kino.Input.text("operator")
+Kino.Input.text("and")
 ```
 
 ```mermaid
@@ -134,7 +134,7 @@ flowchart LR
 ```
 
 ```elixir
-Kino.Input.text("operator")
+Kino.Input.text("not")
 ```
 
 ## Fill In The Blank

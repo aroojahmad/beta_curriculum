@@ -37,5 +37,13 @@ Then use those variables to create a mad lib, but this time use string interpola
 ```elixir
 animal = "tiger"
 country = "usa"
-noun = 
+noun = "berries"
+food = "corn"
+device = "iphone"
+noun = "bush"
+verb = "turn it on"
+verb2 = "panic"
+adjective = "alive"
+
+IO.puts("The majestic #{animal} has roamed the forests of #{country}")
 ```
