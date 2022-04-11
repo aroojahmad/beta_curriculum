@@ -51,7 +51,9 @@ Replace `nil` with your answer.
 # Will be either :rock, :paper, or :scissors
 player_choice = Utils.random(:rock_paper_scissors)
 
-ai_choice = nil
+ai_choice =
+  (player_choice == :rock && :paper) || (player_choice == :paper && :scissors) ||
+    (player_choice == :scissors && :rock)
 
 Utils.test(:rock_paper_scissors_ai, [player_choice, ai_choice])
 ```
@@ -87,7 +89,10 @@ player1_choice = Utils.random(:rock_paper_scissors)
 # Will be either :rock, :paper, or :scissors
 player2_choice = Utils.random(:rock_paper_scissors)
 
-winner = nil
+winner =
+  (player1_choice == :rock && player2_choice == :paper && :player2) ||
+    (player1_choice == :paper && player2_choice == :scissors && :player2) ||
+    (player1_choice == :scissors && player2_choice == :rock && :player2)
 
 Utils.test(:rock_paper_scissors_two_player, [player1_choice, player2_choice, winner])
 ```

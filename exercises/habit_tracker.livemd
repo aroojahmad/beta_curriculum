@@ -41,9 +41,9 @@ Bind a variable `small`, `medium`, and `large` to represent the point value as a
 Replace `nil` with your answers.
 
 ```elixir
-small = nil
-medium = nil
-large = nil
+small = 5
+medium = 20
+large = 30
 
 Utils.test(:habit_tracker_definition, [small, medium, large])
 ```
@@ -57,7 +57,7 @@ Use the `small` and `medium` variables to calculate your answer.
 Replace `nil` with your answer below.
 
 ```elixir
-total_points = nil
+total_points = small + medium
 
 Utils.test(:habit_tracker_add, total_points)
 ```
@@ -76,7 +76,7 @@ Replace `nil` with your answer below.
 ```elixir
 point_goal = 40
 
-percentage = nil
+percentage = (small + medium) / 40 * 100
 
 Utils.test(:habit_tracker_percentage, percentage)
 ```
@@ -96,7 +96,7 @@ A user has completed
 What is their total point score? Replace `nil` with your answer.
 
 ```elixir
-total_points = nil
+total_points = medium + small + 0.5 * large
 
 Utils.test(:habit_tracker_penalties_1, total_points)
 ```
@@ -109,7 +109,7 @@ A user has completed
 What is their total point score? Replace `nil` with your answer.
 
 ```elixir
-total_points = nil
+total_points = 0.5 * (medium + medium + medium) + 0.5 * (small + small + small)
 
 Utils.test(:habit_tracker_penalties_2, total_points)
 ```
@@ -131,7 +131,7 @@ A user has completed:
 What is their total point score? Replace `nil` with your answer.
 
 ```elixir
-total_points = nil
+total_points = 0.6 * medium + medium + 0.6 * small + small + 0.5 * large
 
 Utils.test(:habit_tracker_rewards, total_points)
 ```
@@ -142,5 +142,7 @@ Add your own feature to the habit tracking app. Use comments to describe your fe
 how it would affect calculating the total score and or the total percentage of completed tasks.
 
 ```elixir
+## If a large task was completed early, add the value of the large task
 
+small + medium + 0.6 * large + large + large
 ```

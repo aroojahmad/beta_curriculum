@@ -50,10 +50,10 @@ You can use Github Desktop, the command line, or a source control extension in y
 
 ## GitHub
 
-[Github](https://github.com/) hosts your git projects and provides tools for easier collaboration with Git. 
+[Github](https://github.com/) hosts your git projects and provides tools for easier collaboration with Git.
 
 For example, this entire project is on GitHub. It is a **public** repository meaning that anyone can view the code and
-request to make a pull request. However, only **contributors** with valid permission can approve those changes. 
+request to make a pull request. However, only **contributors** with valid permission can approve those changes.
 
 **public** repositories
 are generally called **open-source projects** if they accept changes from other developers.

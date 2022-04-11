@@ -43,7 +43,7 @@ Replace `nil` with your answer.
 card = 4
 count = 0
 
-next_count = nil
+next_count = 1
 
 Utils.test(:card_count_four, next_count)
 ```
@@ -57,7 +57,7 @@ Replace `nil` with your answer.
 card = 4
 count = 5
 
-next_count = nil
+next_count = 4
 
 Utils.test(:card_count_king, next_count)
 ```
@@ -86,7 +86,9 @@ random_card = Utils.random(2..14)
 
 count = 0
 
-next_count = nil
+next_count = random_card <= 6 && count + 1
+next_count = random_card >= 7 && count + 0
+next_count = random_card >= 10 && count - 1
 
 Utils.test(:card_count_random, [random_card, next_count])
 ```

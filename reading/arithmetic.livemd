@@ -79,7 +79,7 @@ Contrast that with a language like JavaScript which has a maximum safe integer s
 Elixir makes that look tiny!
 
 ```elixir
-biggest_integer = 0
+biggest_integer = 34_343_433_232
 
 Utils.visual(:biggest_integer, biggest_integer)
 ```
@@ -134,7 +134,7 @@ In the Elixir cell below, try changing the float `percentage` to any float betwe
 and see how the loading bar changes! Replace `50.0` with your answer and reevaluate the cell.
 
 ```elixir
-percentage = 50.0
+percentage = 60.0
 
 Utils.visual(:loading_bar, percentage)
 ```
@@ -177,7 +177,7 @@ provide utilities for working with money.
 In the Elixir cell below, enter some floating-point addition that returns an unexpected result.
 
 ```elixir
-
+1.32 + 432.34
 ```
 
 ## Arithmetic Operators
@@ -243,7 +243,7 @@ to write code like this, but it's useful to know you can.
 In the Elixir cell below, add two massive numbers together that you couldn't do in your head.
 
 ```elixir
-
+4_324_234 + 1_423_423
 ```
 
 ## Subtraction
@@ -281,7 +281,7 @@ Subtracting a negative is the same as adding a positive.
 In the Elixir cell below, subtract two massive numbers together.
 
 ```elixir
-
+4_254_352_345 - 34232
 ```
 
 ## Multiplication
@@ -310,7 +310,7 @@ You can multiply integers and floats both positive and negative in combination, 
 In the Elixir cell below, multiply two massive numbers together.
 
 ```elixir
-
+454_453 * 2_342_342
 ```
 
 ## Division
@@ -496,5 +496,5 @@ Utils.animate(:remainder)
 In the Elixir cell below, find the remainder of `10` divided by `3` using `rem`.
 
 ```elixir
-
+rem(10, 3)
 ```

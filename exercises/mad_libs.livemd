@@ -15,7 +15,16 @@ Then use those variables with string concatenation `<>` to create the madlib.
 ![](images/madlib.jpg)
 
 ```elixir
+name_of_company = "Elixir Now"
+a_defined_offering = "SaaS"
+defined_offering = "cool software"
+solve_problem = "energize your thoughts"
+secret_sauce = "with AI"
 
+paragraph =
+  "My company " <>
+    name_of_company <>
+    " is developing " <> defined_offering <> " to " <> solve_problem <> " with " <> secret_sauce
 ```
 
 ## Nature Show Madlib
@@ -26,5 +35,16 @@ Then use those variables to create a mad lib, but this time use string interpola
 ![](images/nature_show_madlib.png)
 
 ```elixir
+animal = "tiger"
+country = "USA"
+plural_noun = "energies"
+a_food = "apples"
+screen_device = "iphone"
+noun = "tree"
+verb = "turn it on"
+verb2 = "run"
+adjective = "alive"
 
+IO.puts("The majestic #{animal} has roamed the forests of #{country} for thousands of years.
+Today, she wanders in search of #{plural_noun}")
 ```

@@ -13,7 +13,12 @@ In the Elixir cell below create a word guessing game.
 * Check that the `guess` matches the answer and return `"Correct!"` or return `"Incorrect."`
 
 ```elixir
+guess = "apple"
+answer = "pear"
 
+guess == answer && IO.puts("Correct!")
+
+guess != answer && IO.puts("Incorrect.")
 ```
 
 ## Guess the Number
@@ -27,5 +32,12 @@ In the Elixir cell below create a number guessing game.
 * Check that the `guess` is greater than `answer` and return `"Too high!"`
 
 ```elixir
+guess = 1
+answer = 10
 
+guess == answer && IO.puts("Correct!")
+
+guess < answer && IO.puts("Too low.")
+
+guess > answer && IO.puts("Too high.")
 ```

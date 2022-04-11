@@ -34,7 +34,8 @@ In the Elixir cells below, use `++` and `--` to add the items show.
 * Add three `"banana"`s to the `shopping_cart`
 
 ```elixir
-shopping_cart = []
+shopping_cart = ["grapes", "walnuts", "apples"]
+shopping_cart ++ ["blueberries", "chocolate", "pizza"]
 ```
 
 ## Text Shopping List With Quantities
@@ -51,5 +52,7 @@ items from the `shopping_cart`
 * Remove `5` `"candies"` (Notice `5` and not `10`!)
 
 ```elixir
-shopping_cart = []
+shopping_cart ++ [milk: 1, eggs: 12, "bars of butter": 2, candies: 10]
+shopping_cart -- ["bars of butter": 2]
+shopping_cart -- [candies: 5]
 ```

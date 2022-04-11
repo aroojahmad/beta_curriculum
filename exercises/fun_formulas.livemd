@@ -42,7 +42,7 @@ Replace `nil` with your answer.
 ```elixir
 completed_items = 10
 total_items = 100
-percentage = nil
+percentage = 10 / 100 * 100
 
 Utils.test(:percentage, [completed_items, total_items, percentage])
 ```
@@ -55,7 +55,7 @@ Replace `nil` with your answer.
 completed_items = Utils.random(1..100)
 total_items = Utils.random(completed_items..100)
 
-percentage = nil
+percentage = completed_items / total_items * 100
 
 Utils.test(:percentage, [completed_items, total_items, percentage])
 ```
@@ -72,7 +72,7 @@ Given that ${mass} * {acceleration} = force$, calculate force. Replace `nil` wit
 mass = 10
 acceleration = 2
 
-force = nil
+force = mass * acceleration
 
 Utils.test(:rocket_ship, force)
 ```
@@ -90,10 +90,11 @@ Then calculate the `tip_amount`.
 Replace `nil` with your answers.
 
 ```elixir
-cost_of_the_meal = nil
-tip_rate = nil
+cost_of_the_meal = 55.50
 
-tip_amount = nil
+tip_rate = 0.2
+
+tip_amount = cost_of_the_meal * tip_rate
 
 Utils.test(:tip_amount, [cost_of_the_meal, tip_rate, tip_amount])
 ```
@@ -108,7 +109,7 @@ First, given `a` and `b`, calculate `c_square` where `c_square` is $c^2$.
 a = 10
 b = 10
 
-c_square = nil
+c_square = a * a + b * b
 
 Utils.test(:pythagorean_c_square, c_square)
 ```
@@ -131,7 +132,7 @@ check out `:math.sqrt`
 ```elixir
 c_square = 200
 
-c = nil
+c = :math.sqrt(200)
 
 Utils.test(:pythagorean_c, c)
 ```
