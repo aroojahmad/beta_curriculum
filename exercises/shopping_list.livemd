@@ -52,7 +52,10 @@ items from the `shopping_cart`
 * Remove `5` `"candies"` (Notice `5` and not `10`!)
 
 ```elixir
-shopping_cart ++ [milk: 1, eggs: 12, "bars of butter": 2, candies: 10]
-shopping_cart -- ["bars of butter": 2]
-shopping_cart -- [candies: 5]
+list =
+  shopping_cart ++
+    ([milk: 1, eggs: 12, "bars of butter": 2, candies: 10] -- ["bars of butter": 2])
+
+list = list -- [candies: 10]
+list ++ [candies: 5]
 ```
