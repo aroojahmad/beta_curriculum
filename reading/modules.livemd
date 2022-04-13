@@ -96,7 +96,11 @@ In the Elixir cell below, create a `Math` module with a function `add` that adds
 together.
 
 ```elixir
-
+defmodule Math do
+  def add(x, y) do
+    x + y
+  end
+end
 ```
 
 ## Internal Module Functions

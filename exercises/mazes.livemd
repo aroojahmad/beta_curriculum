@@ -74,7 +74,7 @@ in a `atom_maze` variable.
 ```elixir
 var = atom_maze
 
-var.south.east.north.east.south.west
+var.south.east.north.east.south.west.north.east.south.east.north.west.south.west.south.west.north.west.south.west.south.west.south.east.north.east.south.east.south
 ```
 
 ## Create Your Own String Maze
@@ -87,7 +87,17 @@ how to navigate your maze with **map[key]** syntax.
 ![](images/custom_string_maze.png)
 
 ```elixir
+new_maze = %{
+  "south" => %{
+    "west" => %{
+      "north" => %{
+        "tired" => "Exit!"
+      }
+    }
+  }
+}
 
+new_maze["south"]["west"]["north"]["tired"]
 ```
 
 ## Create Your Own Atom Maze
@@ -100,5 +110,15 @@ how to navigate your maze with **map.key** syntax.
 ![](images/custom_atom_maze.png)
 
 ```elixir
+new_maze = %{
+  south: %{
+    west: %{
+      south: %{
+        tired: "Exit!"
+      }
+    }
+  }
+}
 
+new_maze.south.west.south.tired
 ```
