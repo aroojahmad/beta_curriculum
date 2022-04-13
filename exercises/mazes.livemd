@@ -1,5 +1,11 @@
 # Mazes
 
+## Section
+
+```elixir
+
+```
+
 ```elixir
 Mix.install([
   {:kino, github: "livebook-dev/kino", override: true},
@@ -49,7 +55,11 @@ The maze is in a `string_maze` variable.
 ![](images/string_maze_small.png)
 
 ```elixir
-string_maze
+var = string_maze
+
+var["west"]["south"]["east"]["north"]["east"]["south"]["east"]["south"]["east"]["south"]["west"][
+  "north"
+]
 ```
 
 ## The Atom Maze
@@ -62,7 +72,9 @@ in a `atom_maze` variable.
 ![](images/atom_maze.png)
 
 ```elixir
-atom_maze
+var = atom_maze
+
+var.south.east.north.east.south.west
 ```
 
 ## Create Your Own String Maze

@@ -229,7 +229,7 @@ In the Elixir cell below, create a function `is_even?` that checks if an integer
 The function should return `true` if the integer is even and `false` if the integer is odd.
 
 ```elixir
-
+is_even? = fn param -> Integer.is_even(param) end
 ```
 
 ## Multi-Parameter Functions

@@ -17,15 +17,6 @@ Mix.install([
 
 [Return Home](../start.livemd)
 
-## Recovering Deleted Cells
-
-Delete the following Elixir cell and recover it using the bin <i class="ri-delete-bin-fill"></i> 
-Button on the sidebar.
-
-```elixir
-"delete me and recover me!"
-```
-
 ## Undo Edits
 
 Edit the following Elixir cell to say `"hello <your_name>"` where `<your_name>` is your name.
@@ -44,6 +35,11 @@ Then use <kbd>CTRL</kbd>+ <kbd>Z</kbd> to undo your edit.
 <!-- livebook:{"break_markdown":true} -->
 
 hello yourname
+
+## Recovering Deleted Cells
+
+Delete the following Elixir cell and recover it using the bin <i class="ri-delete-bin-fill"></i> 
+Button on the sidebar.
 
 ## Recover File
 
