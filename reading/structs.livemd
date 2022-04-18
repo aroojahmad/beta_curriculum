@@ -178,7 +178,22 @@ You can define functions as usual.
   `"#{greeting} I am #{hero.name}"`
 
 ```elixir
+defmodule Hero do
+  defstruct name: "Elixir",
+            catchphrase: "Phoenix",
+            secret_identity: "Batman"
 
+  def reveal(%Hero{}) do
+    "I am secretly #{Hero.secret_identity()}"
+  end
+
+  def introduce(hero, greeting) do
+    "#{greeting} I am #{Hero.name()}"
+  end
+end
+
+Hero.reveal()
+Hero.introduce(Bruce, "wazzup")
 ```
 
 ### Your Turn
@@ -196,7 +211,11 @@ classDiagram
 ```
 
 ```elixir
-
+defmodule Person do
+  defstruct name: "",
+            age: 0,
+            stage: :baby
+end
 ```
 
 Use the `Hero.introduce/2` function on `spider_man`.

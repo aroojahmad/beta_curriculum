@@ -147,6 +147,10 @@ defmodule InspectorGadget do
   def gogo(gadget) do
     "Go go gadget #{gadget}!"
   end
+
+  def arms(_nothing) do
+    gogo("arms")
+  end
 end
 ```
 
@@ -267,7 +271,13 @@ MyModule.SubModule.my_function()
 In the Elixir cell below, create two submodules under as single namespace.
 
 ```elixir
-
+defmodule MyModule.SubModule do
+  defmodule SubModule.NewModule do
+    def test do
+      "return"
+    end
+  end
+end
 ```
 
 ## Module Attributes
@@ -438,7 +448,15 @@ Create a `Math` module with `add/2` and `add/3` functions. Each should add all o
 together.
 
 ```elixir
+defmodule Math do
+  def add(x, y) do
+    x + y
+  end
 
+  def add(x, y, z) do
+    x + y + z
+  end
+end
 ```
 
 ## Default Arguments
@@ -498,5 +516,11 @@ Greeter.greet("HI")
 In the Elixir cell below, define a module with a function that uses a default argument.
 
 ```elixir
+defmodule Greeter do
+  def greet(name \\ "Peter", greeting \\ "Hello") do
+    "#{greeting} #{name}!"
+  end
+end
 
+Greeter.greet()
 ```

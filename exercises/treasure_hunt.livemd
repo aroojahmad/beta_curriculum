@@ -38,7 +38,7 @@ The treasures are:
 * **d** `["diamonds", "gold bars"]`
 
 ```elixir
-dungeon_maze = nil
+dungeon_maze = #i'll do this later
 ```
 
 In the Elixir cell below, demonstrate how to find each of your treasures in the `dungeon_maze` using the **map.key** notation.

@@ -317,7 +317,7 @@ add_two.(2, 3)
 In the Elixir cell below, convert your `calculate_force/2` function from earlier into short-hand syntax.
 
 ```elixir
-
+calculate_force = &(&1 * &2)
 ```
 
 ## First-class Functions
@@ -363,5 +363,19 @@ In the Elixir cell below,
 * Call `is_not?/2` with the`is_even?/1` function from earlier and an integer to check if a number is odd.
 
 ```elixir
+# is_not? = fn function, value -> not function.value end
 
+is_not? = fn callback, value -> not callback.(value) end
+
+callback = fn param -> true end
+
+is_not?.(is_even?, 13)
+
+# test = fn param -> param.() end
+# number = fn -> 5 end
+# test.(number)
+
+# is_not?.(callback, 4)
+
+# look at back this sometime
 ```

@@ -497,5 +497,5 @@ Utils.animate(:remainder)
 In the Elixir cell below, find the remainder of `10` divided by `3` using `rem`.
 
 ```elixir
-
+rem(10, 3)
 ```
