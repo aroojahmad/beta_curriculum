@@ -181,19 +181,22 @@ You can define functions as usual.
 defmodule Hero do
   defstruct name: "Elixir",
             catchphrase: "Phoenix",
-            secret_identity: "Batman"
+            secret_identity: "Batman",
+            greeting: "wazzup"
 
-  def reveal(%Hero{}) do
-    "I am secretly #{Hero.secret_identity()}"
+  hero = %Hero{}
+
+  def reveal(hero) do
+    "I am secretly #{hero.secret_identity}"
   end
 
   def introduce(hero, greeting) do
-    "#{greeting} I am #{Hero.name()}"
+    "#{hero.greeting} I am #{hero.name}"
   end
-end
 
-Hero.reveal()
-Hero.introduce(Bruce, "wazzup")
+  Hero.reveal(hero)
+  Hero.introduce(hero, "wazzup")
+end
 ```
 
 ### Your Turn
@@ -212,9 +215,9 @@ classDiagram
 
 ```elixir
 defmodule Person do
-  defstruct name: "",
-            age: 0,
-            stage: :baby
+  defstruct name: "Spider Man",
+            catchphrase: "Friendly neighborhood Spiderman",
+            secret_identity: "Peter Parker"
 end
 ```
 

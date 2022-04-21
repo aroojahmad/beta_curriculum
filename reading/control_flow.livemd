@@ -111,7 +111,7 @@ It's "Paper" and "Rock". player1 should win, but instead player2 wins.
 </details>
 
 ```elixir
-
+RockPaperScissors.play("Paper", "Rock")
 ```
 
 ### Clear Control Flow
@@ -331,7 +331,10 @@ to `20` will be hot.
 Enter your answer in the Elixir cell below.
 
 ```elixir
-
+def thermometer(temperature) do
+  temperature >= 20 && "Hot"
+  temperature < 20 && "Cold"
+end
 ```
 
 ## Unless
@@ -385,7 +388,11 @@ In the Elixir cell below
 * Create an `unless` statement. which returns `"awake"` unless `tired`.
 
 ```elixir
+tired = true
 
+unless tired do
+  "awake"
+end
 ```
 
 ## Case
@@ -646,5 +653,12 @@ The conditions for `grade` should be:
 * 1-54 is a D
 
 ```elixir
+grade = 76
 
+cond do
+  grade >= 85 -> "A"
+  grade >= 70 -> "B"
+  grade >= 55 -> "C"
+  grade >= 1 -> "D"
+end
 ```
