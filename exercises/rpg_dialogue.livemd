@@ -29,12 +29,17 @@ Enforce that the `:name` property exists.
 
 ```elixir
 defmodule Character do
-  defstruct name: "",
-  class: "",
-  :weapon 
+  @enforce_keys [:name, :weapon]
+  defstruct [:name, :class, :weapon, level: {:ok, 2}]
 end
 
+# strings, integers, maps, tuple, function, binary, list, keyword list, get used to looking at data
+
 Utils.test(:define_character_struct, Character)
+```
+
+```elixir
+character = %Character{name: "Elixir", weapon: "hammer"}
 ```
 
 Create character structs with the following information:
@@ -58,9 +63,9 @@ classDiagram
 Replace `nil` with each struct.
 
 ```elixir
-arthur = nil
-gandalf = nil
-jarlaxle = nil
+arthur = %Character{name: "Arthur", class: "warrior", weapon: "sword"}
+gandalf = %Character{name: "Gandalf", class: "wizard", weapon: "staff"}
+jarlaxle = %Character{name: "Jarlaxle", class: "rogue", weapon: "daggers"}
 
 Utils.test(:character_structs, [arthur, gandalf, jarlaxle])
 ```
@@ -81,11 +86,11 @@ Dialogue.greet(character)
 
 * Create a `Dialogue.attack/2` function which accepts a character and returns the following dialogue.
   ```elixir
-          character = %Character{name: "Arthur", weapon: "sword"}
-          enemy = "Mordred"
+                  character = %Character{name: "Arthur", weapon: "sword"}
+                  enemy = "Mordred"
 
-          Dialogue.attack(character, enemy)
-          "Arthur attacks Mordred with a sword."
+                  Dialogue.attack(character, enemy)
+                  "Arthur attacks Mordred with a sword."
   ```
 
 <!-- livebook:{"break_markdown":true} -->
@@ -133,16 +138,28 @@ Dialogue.relinquish_weapon(character)
 
 ```elixir
 defmodule Dialogue do
+  
   def greet(character) do
+    "Hello, my name is #{character}"
   end
 
   def attack(character, enemy) do
+    "#{character} attacks #{enemy} with a sword."
   end
 
   def relinquish_weapon(character) do
+    "rogue": "Fine, have my #{character.weapon}. I have more hidden anyway."
+    "wizard": "You would not part an old man from his walking stick?"
+    "warrior": "Have my #{character.weapon} then!"
+    any other class: "My precious!"
   end
 
   def matching_weapon(character) do
+    "wizard" and "staff": "My lovely magical staff."
+    "rogue" and "daggers": "Hidden and deadly."
+    "warrior" and "sword": "My noble sword!"
+    any class and no weapon (nil): "I'm unarmed!"
+    any other combination: "I'm not sure a #{character.weapon} suits a #{character.class}."
   end
 end
 
