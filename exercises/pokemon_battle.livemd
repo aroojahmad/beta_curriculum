@@ -39,7 +39,9 @@ In the Elixir cell below, create a `Pokemon` Struct with the keys `:name`, `:typ
 * `:speed` will be an integer
 
 ```elixir
-
+defmodule Pokemon do
+  defstruct [:name, :type, :health, :attack, :speed]
+end
 ```
 
 ### Create 3 Pokemon
@@ -66,11 +68,11 @@ classDiagram
 Replace `nil` with your solution.
 
 ```elixir
-charmander = nil
+charmander = %Pokemon{type: :fire, speed: 20}
 
-bulbasaur = nil
+bulbasaur = %Pokemon{type: :grass, speed: 15}
 
-squirtle = nil
+squirtle = %Pokemon{type: :water, speed: 10}
 ```
 
 ### Create an attack/2 function

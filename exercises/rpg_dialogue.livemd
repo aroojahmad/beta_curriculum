@@ -29,8 +29,8 @@ Enforce that the `:name` property exists.
 
 ```elixir
 defmodule Character do
-  @enforce_keys [:name, :weapon]
-  defstruct [:name, :class, :weapon, level: {:ok, 2}]
+  @enforce_keys [:name]
+  defstruct [:name, :class, :weapon]
 end
 
 # strings, integers, maps, tuple, function, binary, list, keyword list, get used to looking at data
@@ -86,11 +86,11 @@ Dialogue.greet(character)
 
 * Create a `Dialogue.attack/2` function which accepts a character and returns the following dialogue.
   ```elixir
-                  character = %Character{name: "Arthur", weapon: "sword"}
-                  enemy = "Mordred"
+                      character = %Character{name: "Arthur", weapon: "sword"}
+                      enemy = "Mordred"
 
-                  Dialogue.attack(character, enemy)
-                  "Arthur attacks Mordred with a sword."
+                      Dialogue.attack(character, enemy)
+                      "Arthur attacks Mordred with a sword."
   ```
 
 <!-- livebook:{"break_markdown":true} -->
