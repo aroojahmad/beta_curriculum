@@ -1,6 +1,5 @@
 # Rock Paper Scissors
 
-
 ## Navigation
 
 [Return Home](../start.livemd)
@@ -28,5 +27,16 @@ CustomGame.play(game, :water, :water)
 ```
 
 ```elixir
+defmodule CustomGame do
+  defstruct [:rock, :paper, :scissors]
 
+  def new(choice1, choice2, choice3) do
+  end
+
+  def create_game(x, y, z) do
+  end
+
+  def play(d, e, l) do
+  end
+end
 ```

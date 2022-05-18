@@ -45,5 +45,6 @@ Then add the following extra rules
 * Spock beats Rock
 
 ```elixir
-
+defmodule RockPaperSicissorsLizardSpock do
+end
 ```

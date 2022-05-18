@@ -195,7 +195,9 @@ Remember that ranges can have steps! e.g. 1..10//3
 </details>
 
 ```elixir
-
+for n <- 2..100//2 do
+  n
+end
 ```
 
 ## Filters
